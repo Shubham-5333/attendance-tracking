@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.navbar{
+    height:70px;
+    margin-left:290px;
+    padding:0 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:transparent;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.08);
+    color:black;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* left section */
+
+.nav-left h2{
+    font-size:20px;
+    font-weight:600;
+}
+
+/* right section */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+/* icons */
+
+.icon{
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #F5F7F8;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+/* profile */
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.profile-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.name{
+    font-size:14px;
+    font-weight:600;
+}
+
+.course{
+    font-size:12px;
+    color:#94a3b8;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+.navbar{
+    margin-left:70px;
+    padding:0 15px;
+}
+
+.nav-left h2{
+    font-size:16px;
+}
+
+.profile-info{
+    display:none;
+}
+
+}

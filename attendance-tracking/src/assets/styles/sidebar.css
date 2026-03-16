@@ -1,0 +1,95 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-family: Inter, sans-serif;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.novox-logo {
+  width: 160px;
+  margin-bottom: 30px;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  color: #5E758D;
+}
+
+.menu li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+  font-size: 15px;
+  font-weight:bold ;
+}
+.menu li.active {
+  background-color: #007FFF;
+  color: white;
+}
+.menu li:hover {
+  background-color: #007FFF;
+  color: white;
+}
+.menu li:hover {
+  background-color: #007FFF;
+  color: white;
+}
+
+.logout {
+  /* border-top: 3cap solid; */
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+.logout button {
+  width: 95%;
+  padding: 12px;
+  border: none;
+  color: red;
+  border-radius: 6px;
+  cursor: pointer;
+    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;   /* space between icon and text */
+}
+
+.logout button:hover {
+  background: #e63946;
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+    padding: 15px 10px;
+  }
+
+  .novox-logo {
+    width: 40px;
+  }
+
+  .menu li span {
+    display: none;
+  }
+
+  .logout button span {
+    display: none;
+  }
+}
