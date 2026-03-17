@@ -11,9 +11,14 @@ const App = () => {
   return (
     <>
       {/* <Routes> */}
-      <Sidebar />
-      <Navbar />
-      <Dashboard/>
+     <div className="app-layout">
+    <Sidebar />
+    
+    <div className="main-content">
+        <Navbar />
+        <Dashboard />
+    </div>
+</div>
       {/* </Routes> */}
 
     </>

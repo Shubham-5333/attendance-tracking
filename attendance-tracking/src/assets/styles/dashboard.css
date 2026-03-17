@@ -4,8 +4,8 @@
     list-style: none;
 } */
 .dashboard {
-    padding: 20px;
-    margin-left: 290px;
+  padding: 90px 20px 20px; /* 70px navbar + spacing */
+  margin-left: 260px;
 }
 
 .cards-container {

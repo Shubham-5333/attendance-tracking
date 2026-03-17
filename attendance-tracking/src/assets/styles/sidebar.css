@@ -1,6 +1,8 @@
 .sidebar {
-  width: 230px;
+  width: 200px;
   height: 100vh;
+  top: 0%;
+  left: 0%;
   background-color: white;
   color: black;
   padding: 20px;
@@ -13,7 +15,7 @@
 }
 
 .novox-logo {
-  width: 160px;
+  width: 180px;
   margin-bottom: 30px;
 }
 

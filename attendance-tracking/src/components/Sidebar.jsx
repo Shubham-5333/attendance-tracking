@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../assets/styles/sidebar.css'
 import novox from '../assets/image/novox-logo.png'
-import { RiDashboardLine } from 'react-icons/ri'
+import { RiDashboardLine, RiTeamLine } from 'react-icons/ri'
 import { LuClock3 } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
@@ -34,6 +34,13 @@ const Sidebar = () => {
                         <LuClock3 size={20} />
                         <span>Time Log</span>
                     </li>
+                    <li
+                        className={active === "students" ? "active" : ""}
+                        onClick={() => setActive("students")}
+                    >
+                        <RiTeamLine size={20} />
+                        <span>Students</span>
+                    </li>
 
                     <li
                         className={active === "projects" ? "active" : ""}
@@ -53,7 +60,7 @@ const Sidebar = () => {
 
                 </ul>
             </div>
-            
+
             <div className='logout'>
                 <button>
                     <FiLogOut size={18} />
