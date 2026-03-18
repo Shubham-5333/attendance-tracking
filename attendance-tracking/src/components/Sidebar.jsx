@@ -6,6 +6,7 @@ import { LuClock3 } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FiLogOut } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -23,8 +24,10 @@ const Sidebar = () => {
                         className={active === "dashboard" ? "active" : ""}
                         onClick={() => setActive("dashboard")}
                     >
-                        <RiDashboardLine size={20} />
-                        <span>Dashboard</span>
+                        <Link to="/dashboard" className="menu-link">
+                            <RiDashboardLine size={20} />
+                            <span>Dashboard</span>
+                        </Link>
                     </li>
 
                     <li
@@ -38,8 +41,11 @@ const Sidebar = () => {
                         className={active === "students" ? "active" : ""}
                         onClick={() => setActive("students")}
                     >
-                        <RiTeamLine size={20} />
-                        <span>Students</span>
+                        <Link to="/students" className="menu-link">
+                            <RiTeamLine size={20} />
+                            <span>Students</span>
+                        </Link>
+
                     </li>
 
                     <li

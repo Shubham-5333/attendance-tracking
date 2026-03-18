@@ -10,7 +10,7 @@ const Dashboard = () => {
     const stats = [
         { title: "Active Students", value: 120, icon: <FaUserGraduate />, change: "+2.5%" },
         { title: "Avg. Coding Time", value: "6.5h", icon: <FiClock />, change: "+1.2%" },
-        { title: "Today's Attendance", value: "85%", icon: <MdChecklist />, change: "-0.5%" },
+        { title: "Today's Attendance", value: "85%", icon: <MdChecklist />, change: "+0.5%" },
         { title: "Pending Requests", value: 7, icon: <FaHourglassHalf />, change: "+3%" },
     ];
 
@@ -53,7 +53,7 @@ const Dashboard = () => {
         },
         {
             name: "Richard gomez",
-            role: "Mern Stack Developer",
+            role: "Mern Stack Develop",
             status: "Late",
             inTime: "09:10 AM",
             outTime: "01:00 PM",
@@ -62,8 +62,8 @@ const Dashboard = () => {
         }
     ];
 
-    // ✅ Pagination Logic
-    const rowsPerPage = 4;
+    
+    const rowsPerPage = 3;
 
     const indexOfLastRow = currentPage * rowsPerPage;
     const indexOfFirstRow = indexOfLastRow - rowsPerPage;
@@ -81,7 +81,7 @@ const Dashboard = () => {
                     <div className="card" key={index}>
                         <div className="card-top">
                             <div className="icon-box">{item.icon}</div>
-                            <span className="badge">{item.change}</span>
+                            <span style={{backgroundColor:'#d1fae5'}} className="badge">{item.change}</span>
                         </div>
                         <h3>{item.title}</h3>
                         <p>{item.value}</p>

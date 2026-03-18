@@ -1,0 +1,177 @@
+.students {
+    padding: 40px;
+    margin-left: 250px;
+    margin-top: 70px;
+}
+
+/* HEADER */
+.students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.students-header h2 {
+    margin: 0;
+}
+
+.students-header p {
+    color: #6c757d;
+}
+
+.students-actions button {
+    margin-left: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.students-actions .export {
+    background: #e9ecef;
+}
+
+.students-actions .add {
+    background: #007bff;
+    color: white;
+}
+
+/* FILTERS */
+.students-filters {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.students-filters input,
+.students-filters select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* GRID */
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.students-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* AVATAR */
+.students .avatar {
+    width: 70px;
+    height: 70px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+/* STATUS */
+.students .status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.students .status.active {
+    background: #d4edda;
+    color: #28a745;
+}
+
+.students .status.inactive {
+    background: #f8d7da;
+    color: #dc3545;
+}
+
+/* BADGE */
+.students .badge {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #eef;
+    font-size: 12px;
+}
+
+/* PHONE */
+.students .phone {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* ACTIONS */
+.students .card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-box input {
+    width: 95%;
+    padding: 12px 15px 12px 40px;
+}
+
+/* icon inside input */
+.search-box::before {
+    content: "🔍";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .students {
+        margin-left: 70px;
+    }
+
+    .students-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .students-actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .students-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .students-filters input,
+    .students-filters select {
+        width: 90%;
+    }
+}

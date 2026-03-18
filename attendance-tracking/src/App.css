@@ -1,4 +1,4 @@
 .main-content {
-  margin-left: 230px;   /* same as sidebar width */
-  width: calc(100% - 1000px);
+  margin-top: 70px; /* prevent overlap with navbar */
+  padding: 20px;
 }
