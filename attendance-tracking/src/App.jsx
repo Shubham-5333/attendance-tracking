@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Dashboard from './pages/Dashboard';
 import Students from './pages/Students';
+import Employees from './pages/Employees';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
           <Routes>
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/students' element={<Students />} />
+            <Route path='/employees' element={<Employees />} />
           </Routes>
         </div>
       </div>

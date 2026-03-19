@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import '../assets/styles/sidebar.css'
 import novox from '../assets/image/novox-logo.png'
-import { RiDashboardLine, RiTeamLine } from 'react-icons/ri'
-import { LuClock3 } from "react-icons/lu";
+import { RiDashboardLine, RiTeamLine,RiGraduationCapLine } from 'react-icons/ri'
+// import { LuClock3 } from "react-icons/lu";
 import { GoProject } from "react-icons/go";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FiLogOut } from "react-icons/fi";
@@ -31,18 +31,20 @@ const Sidebar = () => {
                     </li>
 
                     <li
-                        className={active === "timelog" ? "active" : ""}
-                        onClick={() => setActive("timelog")}
+                        className={active === "employees" ? "active" : ""}
+                        onClick={() => setActive("employees")}
                     >
-                        <LuClock3 size={20} />
-                        <span>Time Log</span>
+                        <Link to="/employees" className="menu-link">
+                        <RiTeamLine size={20} />
+                        <span>Employees</span>
+                        </Link>
                     </li>
                     <li
                         className={active === "students" ? "active" : ""}
                         onClick={() => setActive("students")}
                     >
                         <Link to="/students" className="menu-link">
-                            <RiTeamLine size={20} />
+                            < RiGraduationCapLine size={20} />
                             <span>Students</span>
                         </Link>
 
